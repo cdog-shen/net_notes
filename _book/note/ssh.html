@@ -1,0 +1,432 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ssh · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="su.html" />
+    
+    
+    <link rel="prev" href="others_cmd.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    欢迎页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux教程</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="通配符.html">
+            
+                <a href="通配符.html">
+            
+                    
+                    通配符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="access.html">
+            
+                <a href="access.html">
+            
+                    
+                    access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="etc_passwd.html">
+            
+                <a href="etc_passwd.html">
+            
+                    
+                    etc_passwd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="Linux内核及其发行版.html">
+            
+                <a href="Linux内核及其发行版.html">
+            
+                    
+                    Linux内核及其发行版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="Linux文件系统.html">
+            
+                <a href="Linux文件系统.html">
+            
+                    
+                    Linux文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="os.html">
+            
+                <a href="os.html">
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="others_cmd.html">
+            
+                <a href="others_cmd.html">
+            
+                    
+                    others_cmd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="su.html">
+            
+                <a href="su.html">
+            
+                    
+                    su
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="sys_info.html">
+            
+                <a href="sys_info.html">
+            
+                    
+                    sys_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="tar_zip.html">
+            
+                <a href="tar_zip.html">
+            
+                    
+                    tar_zip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="terminal.html">
+            
+                <a href="terminal.html">
+            
+                    
+                    terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="which.html">
+            
+                <a href="which.html">
+            
+                    
+                    which
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ssh</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ssh&#x548C;scp">ssh&#x548C;scp</h1>
+<p>&#x200B;    ssh&#x548C;scp&#x90FD;&#x662F;&#x57FA;&#x4E8E;22&#x53F7;&#x7AEF;&#x53E3;&#x7684;ssh&#x670D;&#x52A1;</p>
+<h2 id="ssh&#x7684;&#x5168;&#x79F0;&#x662F;secure-shell---&#x5B89;&#x5168;&#x547D;&#x4EE4;&#x884C;">ssh&#x7684;&#x5168;&#x79F0;&#x662F;secure shell---&#x5B89;&#x5168;&#x547D;&#x4EE4;&#x884C;</h2>
+<p>&#x200B;    &#x7528;&#x6CD5;&#xFF1A;ssh [&#x53C2;&#x6570;] (user@remote)</p>
+<p>&#x200B;    user&#xFF1A;&#x8FDC;&#x7A0B;&#x7528;&#x6237;&#x7684;&#x7528;&#x6237;&#x540D;</p>
+<p>&#x200B;    remote&#xFF1A;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x5730;&#x5740;&#x6216;&#x662F;&#x4E3B;&#x673A;&#x540D;</p>
+<p>&#x200B;    &#x5E38;&#x7528;&#x53C2;&#x6570;&#xFF1A;</p>
+<p>&#x200B;        -p    &#x7AEF;&#x53E3; port &#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x65F6;&#x901A;&#x5E38;&#x4E3A;22&#xFF0C;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x6307;&#x5B9A;ssh&#x670D;&#x52A1;&#x7AEF;&#x53E3;</p>
+<h3 id="ssh-keygen---&#x751F;&#x6210;ssh&#x516C;&#x79C1;&#x94A5;">ssh-keygen---&#x751F;&#x6210;ssh&#x516C;&#x79C1;&#x94A5;</h3>
+<h3 id="ssh-copy-id---&#x53D1;&#x914D;&#x516C;&#x94A5;&#x7ED9;&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x5668;">ssh-copy-id---&#x53D1;&#x914D;&#x516C;&#x94A5;&#x7ED9;&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x5668;</h3>
+<p>&#x200B;    &#x7528;&#x6CD5;&#xFF1A;ssh-copy-id [-p 22] user@remote</p>
+<h2 id="scp&#x7684;&#x5168;&#x79F0;&#x662F;secure-copy---&#x5B89;&#x5168;&#x590D;&#x5236;">scp&#x7684;&#x5168;&#x79F0;&#x662F;secure copy---&#x5B89;&#x5168;&#x590D;&#x5236;</h2>
+<p>&#x200B;    &#x7528;&#x6CD5;&#xFF1A;scp [&#x53C2;&#x6570;] (user@remote:file) [local_directory]</p>
+<p>&#x200B;    user&#xFF1A;&#x8FDC;&#x7A0B;&#x7528;&#x6237;</p>
+<p>&#x200B;    remote&#xFF1A;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;</p>
+<p>&#x200B;    file&#xFF1A;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF09;&#xFF08;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x65F6;&#x662F;&#x76F8;&#x5BF9;&#x8BE5;&#x7528;&#x6237;&#x7684;home&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF09;</p>
+<p>&#x200B;    local_directory&#xFF1A;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;</p>
+<p>&#x200B;    &#x5E38;&#x7528;&#x53C2;&#x6570;&#xFF1A;</p>
+<p>&#x200B;        -r    &#x9012;&#x5F52;&#x590D;&#x5236;&#xFF0C;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x5939;&#x65F6;&#x8981;&#x7528;&#x5982;&#x540C;cp&#x547D;&#x4EE4;</p>
+<p>&#x200B;        -P    &#x7AEF;&#x53E3;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;22</p>
+<h2 id="&#x914D;&#x7F6E;&#x522B;&#x540D;">&#x914D;&#x7F6E;&#x522B;&#x540D;</h2>
+<p>&#x66F4;&#x6539;&#x5728; .ssh &#x76EE;&#x5F55;&#x4E0B;&#x7684; config &#x6587;&#x4EF6;&#x8FFD;&#x52A0;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-config">Host (name)
+    HostName (0.0.0.0)
+    User (name)
+    Port (22)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="others_cmd.html" class="navigation navigation-prev " aria-label="Previous page: others_cmd">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="su.html" class="navigation navigation-next " aria-label="Next page: su">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ssh","level":"2.8","depth":1,"next":{"title":"su","level":"2.9","depth":1,"path":"note/su.md","ref":"note/su.md","articles":[]},"previous":{"title":"others_cmd","level":"2.7","depth":1,"path":"note/others_cmd.md","ref":"note/others_cmd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"note/ssh.md","mtime":"2021-11-04T09:53:11.486Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-17T13:36:01.955Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
