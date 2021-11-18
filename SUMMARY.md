@@ -30,3 +30,9 @@
 
 -  [which](note\which.md) 
 
+## git用法
+
+-  [介绍](How-to-use-git\介绍.md) 
+-  [功能](How-to-use-git\功能.md) 
+-  [高级功能-branch](How-to-use-git\高级功能-branch.md) 
+
