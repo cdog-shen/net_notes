@@ -1,1 +1,0 @@
-natapp --authtoken 7f5c111308f8420e
