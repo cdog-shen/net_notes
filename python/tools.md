@@ -40,13 +40,13 @@
     安装包
 
     ```shell
-    conda install (packagename)[==version]
+    conda install (packagename1)[==version] (packagename1+n)[==version]
     ```
 
     移除包
 
     ```shell
-    conda remove/uninstall (packagename)[==version]
+    conda remove/uninstall (packagename1)[==version] (packagename1+n)[==version]
     ```
 
     查询包
@@ -64,7 +64,11 @@
     更新包
 
     ```shell
+    #更新python的拓展包
     conda update (packagename)
+    #更新conda本身的元数据包
+    conda update conda
+    conda update anaconda
     ```
 
     但别忘了conda对于python的特殊作用，构建虚拟环境
@@ -89,4 +93,14 @@
     conda deactivate env_name
     #info,当前环境会用 * 标出
     conda info -envs
+    ```
+
+    虚拟环境管理
+    ```shell
+    #查看某个环境的包列表
+    conda list -n env_name
+    #删除某个特定环境中的指定包
+    conda remove -n env_name packagename
+    #删除整个环境
+    conda remove -n env_name
     ```
