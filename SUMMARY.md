@@ -28,6 +28,7 @@
 ## python教程
 
   -  [撸码习惯](python\撸码习惯.md) 
+  -  [实用工具](python\tools.md)
 
 ## Markdown教程
 
