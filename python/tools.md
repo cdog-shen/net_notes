@@ -3,6 +3,7 @@
 - ## conda
 
 - ### 介绍
+
     conda是一个包和环境管理器，你可以使用conda来分割不同的python版本以及其中所安装的软件包，并将他们打包成一个个不同的环境，可供调用
 
 - ### Anconda 和 Miniconda
