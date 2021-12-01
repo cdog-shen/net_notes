@@ -98,10 +98,21 @@
     虚拟环境管理
 
     ```shell
+    #查看虚拟环境列表
+    conda env list
     #查看某个环境的包列表
     conda list -n env_name
-    #删除某个特定环境中的指定包
-    conda remove -n env_name packagename
+    #安装/删除某个特定环境中的指定包
+    conda install/remove -n env_name packagename
     #删除整个环境
     conda remove -n env_name
+    ```
+
+    ***在Windows终端中使用cmd可以正常切换环境，但在ps中却因为缺少环境依赖而不能正确配置***
+
+    解决的方法：
+
+    ```shell
+    #安装依赖
+    conda install -n root -c pscondaenvs pscondaenvs
     ```
