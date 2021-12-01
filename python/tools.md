@@ -26,7 +26,7 @@
 
     ***清华源***
 
-    ```sh
+    ```shell
     conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
     conda config --set show_channel_urls yes
     #最后进行更新
@@ -96,6 +96,7 @@
     ```
 
     虚拟环境管理
+
     ```shell
     #查看某个环境的包列表
     conda list -n env_name
